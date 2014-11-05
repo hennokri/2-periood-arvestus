@@ -7,23 +7,21 @@
 
   <body>
   <?php 
-      $username = $_POST["username"];
-      $sex = $_POST["sex"];
+    $username = $_POST["username"];
+    $sex = $_POST["sex"];
 
-	
-	if (isset($username) && isset($sex)) {
-      echo "Tere {$username}! Tundub et olete {$sex}";
-  	}
-  
-    elseif (empty($sex)) {
+		if (isset($username) && isset($sex)) {
+		echo "Tere {$username}! Tundub et olete {$sex}";
+		}
+		elseif (empty($sex)) {
      	echo "Palun minge tagasi ja valige sugu.";
-     }
-    elseif (empty($username)) {
+		}
+		elseif (empty($username)) {
      	echo "Palun minge tagasi ja sisestage nimi.";
-     }
-	 elseif (empty($sex) && empty($username)) {
+		}
+		elseif (empty($sex) && empty($username)) {
   	 	echo "Palun minge tagasi ja täitke väljad.";
-  	 } 
+		} 
   ?>
 
 
